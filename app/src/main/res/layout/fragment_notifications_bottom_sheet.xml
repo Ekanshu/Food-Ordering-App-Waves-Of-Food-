@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomSheets.NotificationsBottomSheetFragment">
+
+    <ImageView
+        android:id="@+id/btnBackArrow"
+        android:gravity="center"
+        android:src="@drawable/arrow_left"
+        android:padding="8dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+    <TextView
+        android:id="@+id/txt"
+        android:textSize="24sp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:textColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNotifications"
+        android:layout_below="@+id/txt"
+        tools:listitem="@layout/sample_notification"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

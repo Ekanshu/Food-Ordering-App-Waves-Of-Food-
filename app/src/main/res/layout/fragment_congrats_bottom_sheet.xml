@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomSheets.CongratsBottomSheetFragment">
+
+    <TextView
+        android:id="@+id/tvCongratsMsg"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Congrats\nYour Order Placed"/>
+
+    <ImageView
+        android:id="@+id/imgCongrats"
+        android:src="@drawable/congratulation"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvCongratsMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGoHome"
+        android:layout_marginBottom="100dp"
+        android:layout_below="@id/imgCongrats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_btn_green"
+        android:text="Go Home"
+        android:textColor="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

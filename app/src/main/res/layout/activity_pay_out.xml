@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayOutActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlName"
+        android:background="@drawable/bg_btn_white"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/yeonsung_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:text="Admin"
+            android:inputType="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txtName"
+            android:background="@drawable/bg_btn_white"
+            android:fontFamily="@font/lato_regular"
+            android:padding="15dp"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlAddress"
+        android:background="@drawable/bg_btn_white"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:minHeight="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlName"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/yeonsung_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="Address"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:inputType="textMultiLine"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtAddress"
+            android:background="@drawable/bg_btn_white"
+            android:fontFamily="@font/lato_regular"
+            android:padding="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPhone"
+        android:background="@drawable/bg_btn_white"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/rlAddress"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/yeonsung_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="Phone"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:inputType="phone"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtPhone"
+            android:background="@drawable/bg_btn_white"
+            android:fontFamily="@font/lato_regular"
+            android:padding="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPaymentMethod"
+        android:background="@drawable/bg_btn_white"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/rlPhone"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/txtCOD"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/yeonsung_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="Payment Method"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/etPaymentMethod"
+            android:layout_toEndOf="@id/txtCOD"
+            android:text="Cash on Delivery"
+            android:inputType="phone"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_white"
+            android:fontFamily="@font/lato_regular"
+            android:padding="15dp" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/cashondelivery" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTotalAmount"
+        android:layout_below="@+id/rlPaymentMethod"
+        android:background="@drawable/bg_btn_white"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/yeonsung_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="Total Amount"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/etTotalAmounts"
+            android:text="$0"
+            android:textSize="20sp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_btn_white"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPlaceMyOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_btn_white"
+        android:elevation="5dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:textSize="20sp"
+        android:text="Place My Order"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

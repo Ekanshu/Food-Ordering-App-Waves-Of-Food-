@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivities.ViewOrderActivity">
+
+    <TextView
+        android:id="@+id/detailedFoodName"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:fontFamily="@font/yeonsung_regular"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:text="Order Details"/>
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_left"
+        app:tint="@color/colorSecondary"
+        android:background="@android:color/transparent"
+        android:layout_margin="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rlOrderedBy"
+        android:layout_below="@+id/detailedFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:elevation="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtOrderedBy"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeonsung_regular"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Ordered by:"/>
+
+        <EditText
+            android:id="@+id/etOrderedBy"
+            android:inputType="none"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txtOrderedBy"
+            android:background="@drawable/bg_btn_white"
+            android:fontFamily="@font/lato_regular"
+            android:padding="15dp"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDeliveryAddress"
+        android:layout_below="@+id/rlOrderedBy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:elevation="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtDeliveryAddress"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/yeonsung_regular"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Delivery Address:"/>
+
+        <EditText
+            android:id="@+id/etDeliveryAddress"
+            android:inputType="none"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txtDeliveryAddress"
+            android:background="@drawable/bg_btn_white"
+            android:fontFamily="@font/lato_regular"
+            android:padding="15dp"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/cardBill"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:background="@drawable/bg_btn_purple"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rlDeliveryAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvOrderedItems"
+            android:text="Ordered Items"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvOrderedItems2"
+            android:layout_width="100dp"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderedItems"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tvItemRate"
+            android:text="Rate"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_toEndOf="@id/tvOrderedItems"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvItemRate2"
+            android:textColor="#FFFFFF"
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/tvOrderedItems"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderedItems"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tvItemQuantity"
+            android:text="Quantity"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/tvItemRate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvItemQuantity2"
+            android:layout_width="60dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_toEndOf="@+id/tvItemRate2"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderedItems"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tvItemTotalPrice"
+            android:text="Amount"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_toEndOf="@id/tvItemQuantity"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvItemTotalPrice2"
+            android:layout_width="60dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_toEndOf="@+id/tvItemQuantity2"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderedItems"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            android:text="Bill:"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/tvItemRate"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/tvItemQuantity2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvTotalAmount2"
+            android:layout_width="60dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemTotalPrice2"
+            android:layout_toEndOf="@+id/tvItemQuantity2"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlOrderedOn"
+        android:layout_below="@+id/cardBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtOrderedOn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeonsung_regular"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Ordered On:"/>
+
+        <EditText
+            android:id="@+id/etOrderedOn"
+            android:inputType="none"
+            android:editable="false"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txtOrderedOn"
+            android:background="@drawable/bg_btn_white"
+            android:fontFamily="@font/lato_regular"
+            android:padding="15dp"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAccept"
+        android:fontFamily="@font/yeonsung_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_btn_purple"
+        android:elevation="5dp"
+        android:text="Accept"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

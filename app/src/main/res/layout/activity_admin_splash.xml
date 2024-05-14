@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivities.AdminSplashActivity">
+
+
+    <ImageView
+        android:layout_above="@+id/txtAppName"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:textColor="@color/colorSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Waves of Food"
+        android:textStyle="bold"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/txtApp"
+        android:text="Admin Dashboard"
+        android:textColor="@color/colorSecondary"
+        android:layout_below="@+id/txtAppName"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/yeonsung_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtDesignedBy"
+        android:text="Designed By \nEkanshu"
+        android:gravity="center"
+        android:textColor="@color/colorSecondary"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

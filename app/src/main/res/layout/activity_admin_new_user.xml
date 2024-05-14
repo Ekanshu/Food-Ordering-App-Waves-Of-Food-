@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivities.AdminNewUserActivity">
+
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            app:tint="@color/colorPrimary"
+            android:src="@drawable/arrow_left"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgAppLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:text="Waves of Food"
+        android:layout_below="@+id/imgAppLogo"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:text="Create New User Admin"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/lato_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminName"
+        android:hint="Name"
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        android:elevation="5dp"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:elevation="5dp"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/etAdminName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/lock"
+        android:inputType="textPassword"
+        android:drawablePadding="15dp"
+        android:padding="15dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Create"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_btn_green"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Designed By \nEkanshu"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

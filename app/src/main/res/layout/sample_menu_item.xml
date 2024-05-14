@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rowFood"
+        app:cardElevation="4dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgDish"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_height="75dp"
+                android:layout_width="75dp"
+                android:src="@drawable/menu1"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="5dp" />
+            <TextView
+                android:id="@+id/tvDishName"
+                android:text="Food Name"
+                android:textSize="18sp"
+                android:layout_toEndOf="@+id/imgDish"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/lato_regular"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:text="5$"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/btnAddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Add to Cart"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_text_green"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

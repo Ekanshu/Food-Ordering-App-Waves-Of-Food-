@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgAppLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:text="Waves of Food"
+        android:layout_below="@+id/imgAppLogo"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:text="Deliver Favorite Food"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:text="Login to Your Account"
+        android:textSize="20sp"
+        android:layout_below="@+id/txt2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/lato_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:elevation="5dp"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/lock"
+        android:inputType="textPassword"
+        android:drawablePadding="15dp"
+        android:padding="15dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txt4"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="or\nContinue with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn_white"
+            android:drawableStart="@drawable/google"
+            android:fontFamily="@font/lato_regular"
+            android:padding="10dp"
+            android:text="Google" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/btnGoogle"
+            android:background="@drawable/bg_btn_white"
+            android:drawableStart="@drawable/facebook"
+            android:fontFamily="@font/lato_regular"
+            android:padding="10dp"
+            android:text="Facebook" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/rl1"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_btn_green"
+        android:textColor="@color/white"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtDHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Don't Have Account?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+    <TextView
+        android:text="Designed By \nEkanshu"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

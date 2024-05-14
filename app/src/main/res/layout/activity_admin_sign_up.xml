@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    tools:context=".AdminActivities.AdminSignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgAppLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:text="Waves of Food"
+            android:layout_below="@+id/imgAppLogo"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/yeonsung_regular"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:text="Login to Your\n Admin Dashboard"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_below="@+id/txt1"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorSecondary"
+            android:fontFamily="@font/lato_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:text="Choose Your Location"
+            android:layout_marginStart="30dp"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/txt2"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorSecondary"
+            android:fontFamily="@font/lato_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itlLocation"
+            android:layout_below="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            app:endIconDrawable="@drawable/arrow_down"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="5dp"
+            app:endIconTint="@color/colorSecondary"
+            android:elevation="5dp" >
+            <AutoCompleteTextView
+                android:id="@+id/listOfLocation"
+                android:inputType="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lato_regular"
+                android:text="Choose Location" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/etOwnerName"
+            android:hint="Owner's Name"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:elevation="5dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/usernew"
+            android:drawablePadding="15dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/itlLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etResName"
+            android:hint="Restaurant's Name"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:elevation="5dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/home"
+            android:drawablePadding="15dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/etOwnerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Email or Phone Number"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:elevation="5dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="15dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/etResName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/lock"
+            android:inputType="textPassword"
+            android:drawablePadding="15dp"
+            android:padding="15dp"
+            android:elevation="5dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/etPassword"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/yeonsung_regular"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btn_purple"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt4"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorSecondary"
+            android:fontFamily="@font/yeonsung_regular"
+            android:text="or\nContinue with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGoogle"
+                android:layout_width="152dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_btn_white"
+                android:drawableStart="@drawable/google"
+                android:fontFamily="@font/lato_regular"
+                android:padding="10dp"
+                android:text="Google" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFacebook"
+                android:layout_width="152dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/btnGoogle"
+                android:background="@drawable/bg_btn_white"
+                android:drawableStart="@drawable/facebook"
+                android:fontFamily="@font/lato_regular"
+                android:padding="10dp"
+                android:text="Facebook" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtAHA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Already Have Account?"
+            android:textColor="@color/colorSecondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="Designed By \nEkanshu"
+            android:gravity="center"
+            android:textColor="@color/colorSecondary"
+            android:textSize="16sp"
+            android:layout_below="@+id/txtAHA"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/yeonsung_regular"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

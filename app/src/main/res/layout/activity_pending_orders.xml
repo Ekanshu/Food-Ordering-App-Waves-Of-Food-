@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivities.PendingOrdersActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:padding="18dp"
+            app:tint="@color/colorSecondary"
+            android:src="@drawable/arrow_left"/>
+        <TextView
+            android:layout_toEndOf="@+id/backArrow"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginEnd="75dp"
+            android:text="Pending Orders"
+            android:textSize="32sp"
+            android:fontFamily="@font/yeonsung_regular"
+            android:textColor="@color/colorSecondary"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPendingOrders"
+        android:layout_below="@+id/rl1"
+        tools:listitem="@layout/sample_pending_order"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
