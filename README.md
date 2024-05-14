@@ -1,4 +1,4 @@
-Waves of Food: Application Development
+**Waves of Food: Application Development**
 
 Overview
 "Waves of Food" is an innovative mobile application designed to revolutionize the food ordering experience. Developed specifically for Android platforms, the app connects users with a variety of local restaurants, allowing them to browse menus, place orders, and manage their dining preferences conveniently. The app leverages Firebase services for data storage, user authentication, and real-time updates, ensuring a seamless and responsive user experience.
